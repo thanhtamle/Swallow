@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NewFeatureIntroView" customModule="Education_Platform" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="chN-Bq-Ecp">
+                    <rect key="frame" x="67" y="129" width="240" height="410"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="chN-Bq-Ecp" secondAttribute="height" multiplier="24:41" id="BY0-18-myH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wj1-MX-UR6">
+                    <rect key="frame" x="12" y="40" width="350" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="LAX-qq-Eso"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTW-xq-Plm">
+                    <rect key="frame" x="16" y="597" width="343" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ab3-UY-fRG"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="oBL-sF-Gz9"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="chN-Bq-Ecp" secondAttribute="trailing" constant="68" id="0Rc-f5-qXR"/>
+                <constraint firstItem="yTW-xq-Plm" firstAttribute="top" secondItem="chN-Bq-Ecp" secondAttribute="bottom" constant="58" id="5mG-AS-CuG"/>
+                <constraint firstItem="chN-Bq-Ecp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="67" id="BEB-Mz-4p9"/>
+                <constraint firstItem="chN-Bq-Ecp" firstAttribute="top" secondItem="Wj1-MX-UR6" secondAttribute="bottom" constant="28" id="J4B-hS-uGc"/>
+                <constraint firstAttribute="bottom" secondItem="yTW-xq-Plm" secondAttribute="bottom" constant="30" id="LSV-cB-BsU"/>
+                <constraint firstItem="Wj1-MX-UR6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="Msa-ln-7Rt"/>
+                <constraint firstAttribute="trailing" secondItem="Wj1-MX-UR6" secondAttribute="trailing" constant="13" id="Rn3-nu-0QZ"/>
+                <constraint firstAttribute="trailing" secondItem="yTW-xq-Plm" secondAttribute="trailing" constant="16" id="ZXj-FP-PIE"/>
+                <constraint firstItem="chN-Bq-Ecp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nmu-Op-Sef"/>
+                <constraint firstItem="Wj1-MX-UR6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="rGB-1p-40i"/>
+                <constraint firstItem="chN-Bq-Ecp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uwr-CN-B2p"/>
+                <constraint firstItem="yTW-xq-Plm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="wqo-Ik-3TL"/>
+            </constraints>
+            <connections>
+                <outlet property="buttonNext" destination="yTW-xq-Plm" id="gf9-0o-YOp"/>
+                <outlet property="featureImage" destination="chN-Bq-Ecp" id="m9N-SN-Sr6"/>
+                <outlet property="featureLabel" destination="Wj1-MX-UR6" id="pEJ-6e-IjP"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

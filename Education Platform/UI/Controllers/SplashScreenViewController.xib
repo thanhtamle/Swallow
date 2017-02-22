@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashScreenViewController" customModule="Education_Platform" customModuleProvider="target">
+            <connections>
+                <outlet property="appNameLabel" destination="WIT-pe-cBA" id="OrC-Mt-Qlp"/>
+                <outlet property="iconImgView" destination="7G3-w2-MmY" id="rFt-Rh-0rK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="citynow_create_tomorrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="7G3-w2-MmY">
+                    <rect key="frame" x="37" y="183" width="300" height="300"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="BBL-bd-XfA"/>
+                        <constraint firstAttribute="width" constant="300" id="sdS-B2-hZA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gaijinnavi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIT-pe-cBA">
+                    <rect key="frame" x="0.0" y="599" width="375" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="TE8-lu-Cuj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.1019607843" green="0.65490196079999996" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7G3-w2-MmY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GXi-ja-ABQ"/>
+                <constraint firstAttribute="trailing" secondItem="WIT-pe-cBA" secondAttribute="trailing" id="PrM-Vb-d00"/>
+                <constraint firstItem="7G3-w2-MmY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="QxK-Gh-nTN"/>
+                <constraint firstAttribute="bottom" secondItem="WIT-pe-cBA" secondAttribute="bottom" constant="20" id="jo0-my-IJz"/>
+                <constraint firstItem="WIT-pe-cBA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kBK-x9-W0a"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="citynow_create_tomorrow.png" width="827" height="421"/>
+    </resources>
+</document>

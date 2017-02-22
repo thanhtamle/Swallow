@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="JobCategoryTableViewCell" customModule="Education_Platform" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="435" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U54-Ms-rNP">
+                        <rect key="frame" x="10" y="8" width="415" height="90.5"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="university" translatesAutoresizingMaskIntoConstraints="NO" id="oFG-GC-0Be">
+                                <rect key="frame" x="10" y="15.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="kIO-Sq-gu1"/>
+                                    <constraint firstAttribute="height" constant="60" id="mNx-WT-w3C"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See jobs hiring for full-time positions" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYR-17-BVv">
+                                <rect key="frame" x="80" y="46" width="325" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="dcB-PO-3F2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.1019607843" green="0.65490196079999996" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4N-dN-OFq">
+                                <rect key="frame" x="78" y="44" width="329" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="tDX-Lk-YSf"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL-TIME JOBS" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-9U-vIA">
+                                <rect key="frame" x="80" y="12" width="325" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="LwR-Zj-yRH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.1019607843" green="0.65490196079999996" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="d9g-9U-vIA" secondAttribute="trailing" constant="10" id="0AC-sn-9ld"/>
+                            <constraint firstItem="oFG-GC-0Be" firstAttribute="leading" secondItem="U54-Ms-rNP" secondAttribute="leading" constant="10" id="0MV-HL-RRz"/>
+                            <constraint firstAttribute="trailing" secondItem="mYR-17-BVv" secondAttribute="trailing" constant="10" id="AZc-Pf-mfx"/>
+                            <constraint firstItem="oFG-GC-0Be" firstAttribute="centerY" secondItem="U54-Ms-rNP" secondAttribute="centerY" id="Bbj-6X-S0c"/>
+                            <constraint firstItem="mYR-17-BVv" firstAttribute="leading" secondItem="oFG-GC-0Be" secondAttribute="trailing" constant="10" id="HuL-Nh-T2z"/>
+                            <constraint firstItem="u4N-dN-OFq" firstAttribute="top" secondItem="d9g-9U-vIA" secondAttribute="bottom" id="Xke-cx-32A"/>
+                            <constraint firstItem="u4N-dN-OFq" firstAttribute="leading" secondItem="oFG-GC-0Be" secondAttribute="trailing" constant="8" id="YAu-ZZ-12V"/>
+                            <constraint firstItem="u4N-dN-OFq" firstAttribute="centerY" secondItem="U54-Ms-rNP" secondAttribute="centerY" id="cP2-xx-6OA"/>
+                            <constraint firstAttribute="trailing" secondItem="u4N-dN-OFq" secondAttribute="trailing" constant="8" id="dhe-XF-KdD"/>
+                            <constraint firstItem="d9g-9U-vIA" firstAttribute="leading" secondItem="oFG-GC-0Be" secondAttribute="trailing" constant="10" id="qmN-q2-fmx"/>
+                            <constraint firstItem="mYR-17-BVv" firstAttribute="top" secondItem="u4N-dN-OFq" secondAttribute="bottom" id="sCK-4b-S0x"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="U54-Ms-rNP" secondAttribute="trailing" constant="10" id="CEJ-79-3xn"/>
+                    <constraint firstAttribute="bottom" secondItem="U54-Ms-rNP" secondAttribute="bottom" constant="2" id="lSQ-bx-a5n"/>
+                    <constraint firstItem="U54-Ms-rNP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="qFx-L3-zKr"/>
+                    <constraint firstItem="U54-Ms-rNP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yBm-hN-iLV"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backgroundCardView" destination="U54-Ms-rNP" id="Od6-zs-B3z"/>
+                <outlet property="descriptionLabel" destination="mYR-17-BVv" id="nbB-ct-Mlz"/>
+                <outlet property="iconImgView" destination="oFG-GC-0Be" id="zIx-rV-gkI"/>
+                <outlet property="titleLabel" destination="d9g-9U-vIA" id="YdU-e6-yNb"/>
+            </connections>
+            <point key="canvasLocation" x="127.5" y="11.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="university" width="475" height="300"/>
+    </resources>
+</document>
